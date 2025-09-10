@@ -18,7 +18,7 @@ export function useProducts(params?: {
       setLoading(true)
       setError(null)
       const response = await productApi.getAll(params)
-      setProducts(response.data)
+      setProducts((response as any).data)
     } catch (err) {
       const error = err as ApiError
       setError(error.message)
@@ -47,7 +47,7 @@ export function useProduct(id: string) {
         setLoading(true)
         setError(null)
         const response = await productApi.getById(id)
-        setProduct(response.data)
+        setProduct((response as any).data)
       } catch (err) {
         const error = err as ApiError
         setError(error.message)

@@ -1,10 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server"
 import { getProductById } from "@/lib/menu-data"
 
-type Props = {
-  params: { id: string }
-}
-
 // Mock products array (replace with your actual data source)
 const mockProducts = [
   {
@@ -28,9 +24,13 @@ const mockProducts = [
 ]
 
 // GET /api/products/[id] - Get a single product
-export async function GET(request: NextRequest, { params }: Props) {
+export async function GET(
+  request: NextRequest,
+  { params }: { params: Promise<{ id: string }> }
+) {
   try {
-    const product = getProductById(params.id)
+    const { id } = await params
+    const product = getProductById(id)
 
     if (!product) {
       return NextResponse.json({ success: false, message: "Product not found" }, { status: 404 })
@@ -48,10 +48,14 @@ export async function GET(request: NextRequest, { params }: Props) {
 }
 
 // PUT /api/products/[id] - Update a product
-export async function PUT(request: NextRequest, { params }: Props) {
+export async function PUT(
+  request: NextRequest,
+  { params }: { params: Promise<{ id: string }> }
+) {
   try {
+    const { id } = await params
     const body = await request.json()
-    const productIndex = mockProducts.findIndex((p) => p.id === params.id)
+    const productIndex = mockProducts.findIndex((p) => p.id === id)
 
     if (productIndex === -1) {
       return NextResponse.json({ success: false, message: "Product not found" }, { status: 404 })
@@ -76,9 +80,13 @@ export async function PUT(request: NextRequest, { params }: Props) {
 }
 
 // DELETE /api/products/[id] - Delete a product
-export async function DELETE(request: NextRequest, { params }: Props) {
+export async function DELETE(
+  request: NextRequest,
+  { params }: { params: Promise<{ id: string }> }
+) {
   try {
-    const productIndex = mockProducts.findIndex((p) => p.id === params.id)
+    const { id } = await params
+    const productIndex = mockProducts.findIndex((p) => p.id === id)
 
     if (productIndex === -1) {
       return NextResponse.json({ success: false, message: "Product not found" }, { status: 404 })

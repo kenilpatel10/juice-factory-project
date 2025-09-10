@@ -11,7 +11,7 @@ import ProductDetailSkeleton from "@/components/skeletons/product-detail-skeleto
 import { useProductLoading } from "@/hooks/use-loading"
 
 type Props = {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
 export default function ProductPage({ params }: Props) {
@@ -25,14 +25,16 @@ export default function ProductPage({ params }: Props) {
     // Scroll to top on page load
     window.scrollTo(0, 0)
 
-    // Load product data
-    const timer = setTimeout(() => {
-      const productData = getProductById(params.slug)
-      setProduct(productData)
-    }, 1800) // Load data slightly before loading completes
+    // Resolve params promise and load product data
+    params.then((resolvedParams) => {
+      const timer = setTimeout(() => {
+        const productData = getProductById(resolvedParams.slug)
+        setProduct(productData)
+      }, 1800) // Load data slightly before loading completes
 
-    return () => clearTimeout(timer)
-  }, [params.slug])
+      return () => clearTimeout(timer)
+    })
+  }, [params])
 
   const getCurrentPrice = () => {
     if (!product) return "$0.00"
@@ -388,7 +390,7 @@ export default function ProductPage({ params }: Props) {
                           <span className="font-medium capitalize text-gray-700 dark:text-gray-300 text-sm sm:text-base">
                             {key.replace("_", " ")}
                           </span>
-                          <span className="font-bold text-gray-900 dark:text-white text-sm sm:text-base">{value}</span>
+                          <span className="font-bold text-gray-900 dark:text-white text-sm sm:text-base">{String(value)}</span>
                         </div>
                       ))}
                     </div>
