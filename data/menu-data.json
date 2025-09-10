@@ -4,67 +4,67 @@
       "id": "all",
       "name": "All Items",
       "description": "All our fresh products",
-      "image": "/images/tropical-juice.jpg"
+      "image": "/images/tropical-juice..webp"
     },
     {
       "id": "fruits",
       "name": "Fresh Fruit Juices",
       "description": "Pure, cold-pressed fruit juices",
-      "image": "/images/tropical-juice.jpg"
+      "image": "/images/tropical-juice..webp"
     },
     {
       "id": "greens",
       "name": "Green Juices",
       "description": "Nutrient-packed green vegetable juices",
-      "image": "/images/green-juice.jpg"
+      "image": "/images/green-juice..webp"
     },
     {
       "id": "detox",
       "name": "Detox Juices",
       "description": "Cleansing and detoxifying blends",
-      "image": "/images/detox-juice.jpg"
+      "image": "/images/detox-juice..webp"
     },
     {
       "id": "supercharger",
       "name": "JF Super Charger",
       "description": "Energy-boosting power blends",
-      "image": "/images/ginger-shot.jpg"
+      "image": "/images/ginger-shot..webp"
     },
     {
       "id": "milkshakes",
       "name": "Milkshakes",
       "description": "Creamy and indulgent milkshakes",
-      "image": "/images/milkshake-chocolate.jpg"
+      "image": "/images/milkshake-chocolate..webp"
     },
     {
       "id": "smoothies",
       "name": "Smoothies",
       "description": "Creamy and nutritious smoothies",
-      "image": "/images/mango-smoothie.jpg"
+      "image": "/images/mango-smoothie..webp"
     },
     {
       "id": "acai",
       "name": "Acai Frappes",
       "description": "Antioxidant-rich acai bowls and drinks",
-      "image": "/images/acai-bowl.jpg"
+      "image": "/images/acai-bowl..webp"
     },
     {
       "id": "wraps",
       "name": "Healthy Wraps",
       "description": "Fresh and filling wraps",
-      "image": "/images/healthy-wrap.jpg"
+      "image": "/images/healthy-wrap..webp"
     },
     {
       "id": "salads",
       "name": "Gourmet Salads",
       "description": "Fresh and crisp salads",
-      "image": "/images/fresh-salad.jpg"
+      "image": "/images/fresh-salad..webp"
     },
     {
       "id": "bowls",
       "name": "Nourishing Bowls",
       "description": "Wholesome and satisfying bowls",
-      "image": "/images/quinoa-salad.jpg"
+      "image": "/images/quinoa-salad..webp"
     }
   ],
   "products": [
@@ -75,7 +75,7 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.00",
-      "image": "/images/products/sc1.png",
+      "image": "/images/products/sc1.webp",
       "category": "supercharger",
       "ingredients": ["Lemon", "Turmeric", "Ginger", "Carrot", "Orange"],
       "nutrition": {
@@ -96,7 +96,12 @@
       "reviews": 234,
       "isNew": true,
       "isOrganic": true,
-      "benefits": ["Immune Support", "Anti-inflammatory", "Energy Boost", "Digestive Health"],
+      "benefits": [
+        "Immune Support",
+        "Anti-inflammatory",
+        "Energy Boost",
+        "Digestive Health"
+      ],
       "allergens": ["None"]
     },
     {
@@ -106,7 +111,7 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.00",
-      "image": "/images/products/j1.png",
+      "image": "/images/products/j1.webp",
       "category": "fruits",
       "ingredients": ["Mango", "Pineapple", "Dragon Fruit", "Orange"],
       "nutrition": {
@@ -127,7 +132,12 @@
       "reviews": 312,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Tropical Vitamins", "Digestive Enzymes", "Antioxidant Rich", "Natural Energy"],
+      "benefits": [
+        "Tropical Vitamins",
+        "Digestive Enzymes",
+        "Antioxidant Rich",
+        "Natural Energy"
+      ],
       "allergens": ["None"]
     },
 
@@ -138,7 +148,7 @@
       "price": "$8.50",
       "mediumPrice": "$9.80",
       "largePrice": "$10.50",
-      "image": "/images/products/s14.png",
+      "image": "/images/products/s14.webp",
       "category": "smoothies",
       "ingredients": ["Mango", "Coconut Milk", "Banana", "Lime", "Honey"],
       "nutrition": {
@@ -159,7 +169,12 @@
       "reviews": 278,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Meal Replacement", "Tropical Vitamins", "Creamy Texture", "Natural Sweetness"],
+      "benefits": [
+        "Meal Replacement",
+        "Tropical Vitamins",
+        "Creamy Texture",
+        "Natural Sweetness"
+      ],
       "allergens": ["Coconut"]
     },
     {
@@ -167,9 +182,17 @@
       "name": "Veggie Wrap Supreme",
       "description": "Fresh vegetables, hummus, and sprouts wrapped in a whole wheat tortilla. A satisfying and nutritious meal that's perfect for lunch or a light dinner.",
       "price": "$8.80",
-      "image": "/images/products/w1.png",
+      "image": "/images/products/w1.webp",
       "category": "wraps",
-      "ingredients": ["Whole Wheat Tortilla", "Hummus", "Lettuce", "Tomato", "Cucumber", "Sprouts", "Avocado"],
+      "ingredients": [
+        "Whole Wheat Tortilla",
+        "Hummus",
+        "Lettuce",
+        "Tomato",
+        "Cucumber",
+        "Sprouts",
+        "Avocado"
+      ],
       "nutrition": {
         "calories": 320,
         "protein": "12g",
@@ -188,7 +211,12 @@
       "reviews": 145,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["High Fiber", "Plant Protein", "Satisfying Meal", "Fresh Vegetables"],
+      "benefits": [
+        "High Fiber",
+        "Plant Protein",
+        "Satisfying Meal",
+        "Fresh Vegetables"
+      ],
       "allergens": ["Gluten", "Sesame"]
     },
     {
@@ -196,9 +224,16 @@
       "name": "Garden Fresh Salad",
       "description": "Mixed greens, cherry tomatoes, cucumber, and seasonal vegetables with our house-made vinaigrette. A light and refreshing meal packed with nutrients.",
       "price": "$7.80",
-      "image": "/images/products/sd1.png",
+      "image": "/images/products/sd1.webp",
       "category": "salads",
-      "ingredients": ["Mixed Greens", "Cherry Tomatoes", "Cucumber", "Red Onion", "Carrots", "House Vinaigrette"],
+      "ingredients": [
+        "Mixed Greens",
+        "Cherry Tomatoes",
+        "Cucumber",
+        "Red Onion",
+        "Carrots",
+        "House Vinaigrette"
+      ],
       "nutrition": {
         "calories": 150,
         "protein": "4g",
@@ -217,7 +252,12 @@
       "reviews": 98,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Low Calorie", "High Fiber", "Fresh Vegetables", "Light Meal"],
+      "benefits": [
+        "Low Calorie",
+        "High Fiber",
+        "Fresh Vegetables",
+        "Light Meal"
+      ],
       "allergens": ["None"]
     },
     {
@@ -227,7 +267,7 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/j2.png",
+      "image": "/images/products/j2.webp",
       "category": "fruits",
       "ingredients": ["Mint", "Ginger", "Lemon", "Apple"],
       "nutrition": {
@@ -257,9 +297,15 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/j3.png",
+      "image": "/images/products/j3.webp",
       "category": "fruits",
-      "ingredients": ["Strawberries", "Raspberries", "Blackberries", "Orange", "Apple"],
+      "ingredients": [
+        "Strawberries",
+        "Raspberries",
+        "Blackberries",
+        "Orange",
+        "Apple"
+      ],
       "nutrition": {
         "calories": 120,
         "protein": "2g",
@@ -278,7 +324,12 @@
       "reviews": 203,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Antioxidant Power", "Immune Support", "Recovery", "Vitamin C"],
+      "benefits": [
+        "Antioxidant Power",
+        "Immune Support",
+        "Recovery",
+        "Vitamin C"
+      ],
       "allergens": ["None"]
     },
     {
@@ -288,7 +339,7 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/j4.png",
+      "image": "/images/products/j4.webp",
       "category": "fruits",
       "ingredients": ["Mint", "Ginger", "Pineapple", "Pear", "Apple"],
       "nutrition": {
@@ -308,7 +359,12 @@
       "reviews": 128,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Digestive Health", "Refreshing", "Natural Sweetness", "Hydrating"],
+      "benefits": [
+        "Digestive Health",
+        "Refreshing",
+        "Natural Sweetness",
+        "Hydrating"
+      ],
       "allergens": ["None"]
     },
     {
@@ -318,7 +374,7 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/j5.png",
+      "image": "/images/products/j5.webp",
       "category": "fruits",
       "ingredients": ["Strawberries", "Blackberries", "Kiwifruit"],
       "nutrition": {
@@ -349,7 +405,7 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/j6.png",
+      "image": "/images/products/j6.webp",
       "category": "fruits",
       "ingredients": ["Strawberries", "Mint", "Watermelon", "Apple"],
       "nutrition": {
@@ -369,7 +425,12 @@
       "reviews": 167,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Weight Management", "Hydrating", "Low Calorie", "Metabolism Support"],
+      "benefits": [
+        "Weight Management",
+        "Hydrating",
+        "Low Calorie",
+        "Metabolism Support"
+      ],
       "allergens": ["None"]
     },
     {
@@ -379,9 +440,16 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/j7.png",
+      "image": "/images/products/j7.webp",
       "category": "fruits",
-      "ingredients": ["Chia", "Pear", "Beetroot", "Grapefruit", "Ginger", "Apple"],
+      "ingredients": [
+        "Chia",
+        "Pear",
+        "Beetroot",
+        "Grapefruit",
+        "Ginger",
+        "Apple"
+      ],
       "nutrition": {
         "calories": 115,
         "protein": "3g",
@@ -410,7 +478,7 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/g1.png",
+      "image": "/images/products/g1.webp",
       "category": "greens",
       "ingredients": ["Apple", "Pineapple", "Baby Spinach", "Kale"],
       "nutrition": {
@@ -431,7 +499,12 @@
       "reviews": 234,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Green Nutrition", "Beginner Friendly", "Iron Rich", "Vitamin K"],
+      "benefits": [
+        "Green Nutrition",
+        "Beginner Friendly",
+        "Iron Rich",
+        "Vitamin K"
+      ],
       "allergens": ["None"]
     },
     {
@@ -441,9 +514,16 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/g2.png",
+      "image": "/images/products/g2.webp",
       "category": "greens",
-      "ingredients": ["Kale", "Parsley", "Cucumber", "Spinach", "Celery", "Apple"],
+      "ingredients": [
+        "Kale",
+        "Parsley",
+        "Cucumber",
+        "Spinach",
+        "Celery",
+        "Apple"
+      ],
       "nutrition": {
         "calories": 95,
         "protein": "4g",
@@ -462,7 +542,12 @@
       "reviews": 189,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Maximum Nutrition", "Chlorophyll Rich", "Alkalizing", "Detoxifying"],
+      "benefits": [
+        "Maximum Nutrition",
+        "Chlorophyll Rich",
+        "Alkalizing",
+        "Detoxifying"
+      ],
       "allergens": ["None"]
     },
     {
@@ -472,7 +557,7 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/g3.png",
+      "image": "/images/products/g3.webp",
       "category": "greens",
       "ingredients": ["Kale", "Spinach", "Apple", "Avocado"],
       "nutrition": {
@@ -493,7 +578,12 @@
       "reviews": 156,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Heart Healthy", "Creamy Texture", "Healthy Fats", "Nutrient Dense"],
+      "benefits": [
+        "Heart Healthy",
+        "Creamy Texture",
+        "Healthy Fats",
+        "Nutrient Dense"
+      ],
       "allergens": ["None"]
     },
     {
@@ -503,9 +593,17 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/g4.png",
+      "image": "/images/products/g4.webp",
       "category": "greens",
-      "ingredients": ["Kale", "Parsley", "Celery", "Cucumber", "Ginger", "Lemon", "Carrot"],
+      "ingredients": [
+        "Kale",
+        "Parsley",
+        "Celery",
+        "Cucumber",
+        "Ginger",
+        "Lemon",
+        "Carrot"
+      ],
       "nutrition": {
         "calories": 85,
         "protein": "3g",
@@ -524,7 +622,12 @@
       "reviews": 123,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Pure Vegetables", "Raw Nutrition", "Alkalizing", "Mineral Rich"],
+      "benefits": [
+        "Pure Vegetables",
+        "Raw Nutrition",
+        "Alkalizing",
+        "Mineral Rich"
+      ],
       "allergens": ["None"]
     },
     {
@@ -534,9 +637,16 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/d1.png",
+      "image": "/images/products/d1.webp",
       "category": "detox",
-      "ingredients": ["Apple", "Carrot", "Beetroot", "Spinach", "Kale", "Fresh Turmeric"],
+      "ingredients": [
+        "Apple",
+        "Carrot",
+        "Beetroot",
+        "Spinach",
+        "Kale",
+        "Fresh Turmeric"
+      ],
       "nutrition": {
         "calories": 125,
         "protein": "3g",
@@ -555,7 +665,12 @@
       "reviews": 198,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Liver Support", "Anti-inflammatory", "Detoxifying", "Blood Cleansing"],
+      "benefits": [
+        "Liver Support",
+        "Anti-inflammatory",
+        "Detoxifying",
+        "Blood Cleansing"
+      ],
       "allergens": ["None"]
     },
     {
@@ -565,7 +680,7 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/d2.png",
+      "image": "/images/products/d2.webp",
       "category": "detox",
       "ingredients": ["Carrot", "Apple", "Ginger", "Cayenne Pepper"],
       "nutrition": {
@@ -586,7 +701,12 @@
       "reviews": 167,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Metabolism Boost", "Detoxifying", "Beta Carotene", "Thermogenic"],
+      "benefits": [
+        "Metabolism Boost",
+        "Detoxifying",
+        "Beta Carotene",
+        "Thermogenic"
+      ],
       "allergens": ["None"]
     },
     {
@@ -596,7 +716,7 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/d3.png",
+      "image": "/images/products/d3.webp",
       "category": "detox",
       "ingredients": ["Pear", "Lemon", "Ginger", "Cucumber"],
       "nutrition": {
@@ -616,7 +736,12 @@
       "reviews": 134,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Gentle Cleansing", "Hydrating", "Digestive Aid", "Natural Sweetness"],
+      "benefits": [
+        "Gentle Cleansing",
+        "Hydrating",
+        "Digestive Aid",
+        "Natural Sweetness"
+      ],
       "allergens": ["None"]
     },
     {
@@ -626,7 +751,7 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/d4.png",
+      "image": "/images/products/d4.webp",
       "category": "detox",
       "ingredients": ["Grapefruit", "Apple", "Ginger", "Parsley", "Green Tea"],
       "nutrition": {
@@ -647,7 +772,12 @@
       "reviews": 145,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Liver Health", "Antioxidants", "Cleansing", "Green Tea Benefits"],
+      "benefits": [
+        "Liver Health",
+        "Antioxidants",
+        "Cleansing",
+        "Green Tea Benefits"
+      ],
       "allergens": ["None"]
     },
     {
@@ -657,7 +787,7 @@
       "price": "$6.50",
       "mediumPrice": "$7.50",
       "largePrice": "$8.50",
-      "image": "/images/products/sc2.png",
+      "image": "/images/products/sc2.webp",
       "category": "supercharger",
       "ingredients": ["Spinach", "Grapefruit", "Coconut Water", "Orange"],
       "nutrition": {
@@ -678,7 +808,12 @@
       "reviews": 189,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Metabolism Support", "Fat Burning", "Hydrating", "Electrolytes"],
+      "benefits": [
+        "Metabolism Support",
+        "Fat Burning",
+        "Hydrating",
+        "Electrolytes"
+      ],
       "allergens": ["None"]
     },
     {
@@ -688,7 +823,7 @@
       "price": "$6.50",
       "mediumPrice": "$7.50",
       "largePrice": "$8.50",
-      "image": "/images/products/sc3.png",
+      "image": "/images/products/sc3.webp",
       "category": "supercharger",
       "ingredients": ["Ginger", "Spinach", "Beetroot", "Celery", "Apple"],
       "nutrition": {
@@ -709,7 +844,12 @@
       "reviews": 203,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Hangover Relief", "Liver Support", "Nausea Relief", "Recovery"],
+      "benefits": [
+        "Hangover Relief",
+        "Liver Support",
+        "Nausea Relief",
+        "Recovery"
+      ],
       "allergens": ["None"]
     },
     {
@@ -719,7 +859,7 @@
       "price": "$6.50",
       "mediumPrice": "$7.50",
       "largePrice": "$8.50",
-      "image": "/images/products/sc4.png",
+      "image": "/images/products/sc4.webp",
       "category": "supercharger",
       "ingredients": ["Cucumber", "Blueberry", "Pineapple", "Apple"],
       "nutrition": {
@@ -750,7 +890,7 @@
       "price": "$6.50",
       "mediumPrice": "$7.50",
       "largePrice": "$8.50",
-      "image": "/images/products/sc5.png",
+      "image": "/images/products/sc5.webp",
       "category": "supercharger",
       "ingredients": ["Lemon", "Celery", "Spinach", "Parsley", "Kale", "Apple"],
       "nutrition": {
@@ -771,7 +911,12 @@
       "reviews": 278,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Maximum Nutrition", "Chlorophyll Rich", "Energy Boost", "Alkalizing"],
+      "benefits": [
+        "Maximum Nutrition",
+        "Chlorophyll Rich",
+        "Energy Boost",
+        "Alkalizing"
+      ],
       "allergens": ["None"]
     },
     {
@@ -781,7 +926,7 @@
       "price": "$6.50",
       "mediumPrice": "$7.50",
       "largePrice": "$8.50",
-      "image": "/images/products/sc6.png",
+      "image": "/images/products/sc6.webp",
       "category": "supercharger",
       "ingredients": ["Mixed Berries", "Beetroot", "Watermelon", "Apple"],
       "nutrition": {
@@ -802,7 +947,12 @@
       "reviews": 234,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Brain Health", "Mental Clarity", "Blood Flow", "Cognitive Support"],
+      "benefits": [
+        "Brain Health",
+        "Mental Clarity",
+        "Blood Flow",
+        "Cognitive Support"
+      ],
       "allergens": ["None"]
     },
     {
@@ -812,7 +962,7 @@
       "price": "$6.50",
       "mediumPrice": "$7.50",
       "largePrice": "$8.50",
-      "image": "/images/products/sc7.png",
+      "image": "/images/products/sc7.webp",
       "category": "supercharger",
       "ingredients": ["Mint", "Ginger", "Celery", "Kiwifruit", "Apple"],
       "nutrition": {
@@ -833,7 +983,12 @@
       "reviews": 167,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Digestive Health", "Soothing", "Enzyme Rich", "Anti-inflammatory"],
+      "benefits": [
+        "Digestive Health",
+        "Soothing",
+        "Enzyme Rich",
+        "Anti-inflammatory"
+      ],
       "allergens": ["None"]
     },
     {
@@ -843,7 +998,7 @@
       "price": "$6.50",
       "mediumPrice": "$7.50",
       "largePrice": "$8.50",
-      "image": "/images/products/sc8.png",
+      "image": "/images/products/sc8.webp",
       "category": "supercharger",
       "ingredients": ["Apple"],
       "nutrition": {
@@ -873,7 +1028,7 @@
       "price": "$6.50",
       "mediumPrice": "$7.50",
       "largePrice": "$8.50",
-      "image": "/images/products/ms1.png",
+      "image": "/images/products/ms1.webp",
       "category": "milkshakes",
       "ingredients": ["Chocolate", "Banana", "Milk", "Honey"],
       "nutrition": {
@@ -903,7 +1058,7 @@
       "price": "$6.50",
       "mediumPrice": "$7.50",
       "largePrice": "$8.50",
-      "image": "/images/products/ms2.png",
+      "image": "/images/products/ms2.webp",
       "category": "milkshakes",
       "ingredients": ["Strawberry or Mixed Berry", "Banana", "Milk"],
       "nutrition": {
@@ -933,7 +1088,7 @@
       "price": "$6.50",
       "mediumPrice": "$7.50",
       "largePrice": "$8.50",
-      "image": "/images/products/ms3.png",
+      "image": "/images/products/ms3.webp",
       "category": "milkshakes",
       "ingredients": ["Mango", "Banana", "Milk"],
       "nutrition": {
@@ -963,7 +1118,7 @@
       "price": "$6.50",
       "mediumPrice": "$7.50",
       "largePrice": "$8.50",
-      "image": "/images/products/ms4.png",
+      "image": "/images/products/ms4.webp",
       "category": "milkshakes",
       "ingredients": ["Passion Fruit", "Pineapple", "Banana", "Milk"],
       "nutrition": {
@@ -983,7 +1138,12 @@
       "reviews": 156,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Exotic Flavors", "Vitamin C", "Digestive Enzymes", "Tropical"],
+      "benefits": [
+        "Exotic Flavors",
+        "Vitamin C",
+        "Digestive Enzymes",
+        "Tropical"
+      ],
       "allergens": ["Dairy"]
     },
     {
@@ -993,9 +1153,16 @@
       "price": "$6.50",
       "mediumPrice": "$7.50",
       "largePrice": "$8.50",
-      "image": "/images/products/ms5.png",
+      "image": "/images/products/ms5.webp",
       "category": "milkshakes",
-      "ingredients": ["Avocado", "Almonds", "Banana", "Whey Protein", "Honey", "Milk"],
+      "ingredients": [
+        "Avocado",
+        "Almonds",
+        "Banana",
+        "Whey Protein",
+        "Honey",
+        "Milk"
+      ],
       "nutrition": {
         "calories": 385,
         "protein": "28g",
@@ -1013,7 +1180,12 @@
       "reviews": 167,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["High Protein", "Healthy Fats", "Post-Workout", "Muscle Building"],
+      "benefits": [
+        "High Protein",
+        "Healthy Fats",
+        "Post-Workout",
+        "Muscle Building"
+      ],
       "allergens": ["Dairy", "Tree Nuts"]
     },
     {
@@ -1023,7 +1195,7 @@
       "price": "$6.50",
       "mediumPrice": "$7.50",
       "largePrice": "$8.50",
-      "image": "/images/products/ms6.png",
+      "image": "/images/products/ms6.webp",
       "category": "milkshakes",
       "ingredients": ["Coffee", "Cacao/Chocolate", "Banana", "Milk"],
       "nutrition": {
@@ -1053,7 +1225,7 @@
       "price": "$6.50",
       "mediumPrice": "$7.50",
       "largePrice": "$8.50",
-      "image": "/images/products/ms7.png",
+      "image": "/images/products/ms7.webp",
       "category": "milkshakes",
       "ingredients": ["Pineapple", "Banana", "Coconut Milk", "Honey"],
       "nutrition": {
@@ -1083,7 +1255,7 @@
       "price": "$6.50",
       "mediumPrice": "$7.50",
       "largePrice": "$8.50",
-      "image": "/images/products/ms8.png",
+      "image": "/images/products/ms8.webp",
       "category": "milkshakes",
       "ingredients": ["Kale", "Spinach", "Banana", "Coconut Water/Milk"],
       "nutrition": {
@@ -1103,7 +1275,12 @@
       "reviews": 89,
       "isNew": true,
       "isOrganic": true,
-      "benefits": ["Green Nutrition", "Dairy-Free Option", "Iron Rich", "Healthy"],
+      "benefits": [
+        "Green Nutrition",
+        "Dairy-Free Option",
+        "Iron Rich",
+        "Healthy"
+      ],
       "allergens": ["None"]
     },
     {
@@ -1113,9 +1290,17 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/s1.png",
+      "image": "/images/products/s1.webp",
       "category": "smoothies",
-      "ingredients": ["Banana", "Blueberries", "Almonds", "Raw Honey", "Almond Milk", "Maqui Berry", "Chia"],
+      "ingredients": [
+        "Banana",
+        "Blueberries",
+        "Almonds",
+        "Raw Honey",
+        "Almond Milk",
+        "Maqui Berry",
+        "Chia"
+      ],
       "nutrition": {
         "calories": 285,
         "protein": "8g",
@@ -1134,7 +1319,12 @@
       "reviews": 198,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Brain Health", "Omega-3 Rich", "Antioxidants", "Cognitive Support"],
+      "benefits": [
+        "Brain Health",
+        "Omega-3 Rich",
+        "Antioxidants",
+        "Cognitive Support"
+      ],
       "allergens": ["Tree Nuts"]
     },
     {
@@ -1144,9 +1334,15 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/s2.png",
+      "image": "/images/products/s2.webp",
       "category": "smoothies",
-      "ingredients": ["Activated Almonds", "Espresso Coffee Shot", "Dates", "Banana", "Filtered Water"],
+      "ingredients": [
+        "Activated Almonds",
+        "Espresso Coffee Shot",
+        "Dates",
+        "Banana",
+        "Filtered Water"
+      ],
       "nutrition": {
         "calories": 245,
         "protein": "9g",
@@ -1164,7 +1360,12 @@
       "reviews": 167,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Caffeine Boost", "Natural Energy", "Protein Rich", "Morning Fuel"],
+      "benefits": [
+        "Caffeine Boost",
+        "Natural Energy",
+        "Protein Rich",
+        "Morning Fuel"
+      ],
       "allergens": ["Tree Nuts"]
     },
     {
@@ -1174,7 +1375,7 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/s3.png",
+      "image": "/images/products/s3.webp",
       "category": "smoothies",
       "ingredients": [
         "Activated Almonds",
@@ -1202,7 +1403,12 @@
       "reviews": 234,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Antioxidant Rich", "Healthy Fats", "Protein", "Natural Sweetness"],
+      "benefits": [
+        "Antioxidant Rich",
+        "Healthy Fats",
+        "Protein",
+        "Natural Sweetness"
+      ],
       "allergens": ["Tree Nuts", "Peanuts"]
     },
     {
@@ -1212,9 +1418,16 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/s4.png",
+      "image": "/images/products/s4.webp",
       "category": "smoothies",
-      "ingredients": ["Kale", "Pineapple", "Avocado", "Banana", "Coconut Water", "Camu Camu"],
+      "ingredients": [
+        "Kale",
+        "Pineapple",
+        "Avocado",
+        "Banana",
+        "Coconut Water",
+        "Camu Camu"
+      ],
       "nutrition": {
         "calories": 265,
         "protein": "6g",
@@ -1242,9 +1455,16 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/s5.png",
+      "image": "/images/products/s5.webp",
       "category": "smoothies",
-      "ingredients": ["Bananas", "Strawberries", "Dates", "Spinach", "Coconut Water", "Sacha Inchi Nut Protein"],
+      "ingredients": [
+        "Bananas",
+        "Strawberries",
+        "Dates",
+        "Spinach",
+        "Coconut Water",
+        "Sacha Inchi Nut Protein"
+      ],
       "nutrition": {
         "calories": 295,
         "protein": "12g",
@@ -1262,7 +1482,12 @@
       "reviews": 178,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["High Protein", "Fitness Support", "Iron Rich", "Natural Energy"],
+      "benefits": [
+        "High Protein",
+        "Fitness Support",
+        "Iron Rich",
+        "Natural Energy"
+      ],
       "allergens": ["Tree Nuts"]
     },
     {
@@ -1272,9 +1497,16 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/s6.png",
+      "image": "/images/products/s6.webp",
       "category": "smoothies",
-      "ingredients": ["Pineapple", "Blueberries", "Mango", "Strawberries", "Banana", "Natural Yogurt"],
+      "ingredients": [
+        "Pineapple",
+        "Blueberries",
+        "Mango",
+        "Strawberries",
+        "Banana",
+        "Natural Yogurt"
+      ],
       "nutrition": {
         "calories": 275,
         "protein": "9g",
@@ -1293,7 +1525,12 @@
       "reviews": 267,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Tropical Flavors", "Antioxidants", "Probiotics", "Vitamin C"],
+      "benefits": [
+        "Tropical Flavors",
+        "Antioxidants",
+        "Probiotics",
+        "Vitamin C"
+      ],
       "allergens": ["Dairy"]
     },
     {
@@ -1303,7 +1540,7 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/s7.png",
+      "image": "/images/products/s7.webp",
       "category": "smoothies",
       "ingredients": [
         "Blueberries",
@@ -1343,9 +1580,16 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/s8.png",
+      "image": "/images/products/s8.webp",
       "category": "smoothies",
-      "ingredients": ["Green Tea", "Spinach", "Mango", "Banana", "Natural Yogurt", "Spirulina"],
+      "ingredients": [
+        "Green Tea",
+        "Spinach",
+        "Mango",
+        "Banana",
+        "Natural Yogurt",
+        "Spirulina"
+      ],
       "nutrition": {
         "calories": 255,
         "protein": "8g",
@@ -1364,7 +1608,12 @@
       "reviews": 134,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Metabolism Boost", "Green Tea Antioxidants", "Superfood", "Energy"],
+      "benefits": [
+        "Metabolism Boost",
+        "Green Tea Antioxidants",
+        "Superfood",
+        "Energy"
+      ],
       "allergens": ["Dairy"]
     },
     {
@@ -1374,9 +1623,17 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/s9.png",
+      "image": "/images/products/s9.webp",
       "category": "smoothies",
-      "ingredients": ["Coconut Flakes", "Kale", "Spinach", "Pineapple", "Avocado", "Coconut Water", "Lemon"],
+      "ingredients": [
+        "Coconut Flakes",
+        "Kale",
+        "Spinach",
+        "Pineapple",
+        "Avocado",
+        "Coconut Water",
+        "Lemon"
+      ],
       "nutrition": {
         "calories": 245,
         "protein": "5g",
@@ -1394,7 +1651,12 @@
       "reviews": 123,
       "isNew": true,
       "isOrganic": true,
-      "benefits": ["Tropical Green", "Healthy Fats", "Electrolytes", "Coconut MCTs"],
+      "benefits": [
+        "Tropical Green",
+        "Healthy Fats",
+        "Electrolytes",
+        "Coconut MCTs"
+      ],
       "allergens": ["None"]
     },
     {
@@ -1404,9 +1666,16 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/s10.png",
+      "image": "/images/products/s10.webp",
       "category": "smoothies",
-      "ingredients": ["Spinach", "Orange", "Pineapple", "Mint", "Banana", "Lemon"],
+      "ingredients": [
+        "Spinach",
+        "Orange",
+        "Pineapple",
+        "Mint",
+        "Banana",
+        "Lemon"
+      ],
       "nutrition": {
         "calories": 235,
         "protein": "4g",
@@ -1434,9 +1703,16 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/s11.png",
+      "image": "/images/products/s11.webp",
       "category": "smoothies",
-      "ingredients": ["Spinach", "Orange", "Pineapple", "Mint", "Banana", "Lemon"],
+      "ingredients": [
+        "Spinach",
+        "Orange",
+        "Pineapple",
+        "Mint",
+        "Banana",
+        "Lemon"
+      ],
       "nutrition": {
         "calories": 240,
         "protein": "4g",
@@ -1454,7 +1730,12 @@
       "reviews": 167,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Refreshing", "Green Nutrition", "Mojito Inspired", "Vitamin C"],
+      "benefits": [
+        "Refreshing",
+        "Green Nutrition",
+        "Mojito Inspired",
+        "Vitamin C"
+      ],
       "allergens": ["None"]
     },
     {
@@ -1464,7 +1745,7 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/s12.png",
+      "image": "/images/products/s12.webp",
       "category": "smoothies",
       "ingredients": ["Banana", "Yogurt", "Milk", "Whey Protein"],
       "nutrition": {
@@ -1493,7 +1774,7 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/s13.png",
+      "image": "/images/products/s13.webp",
       "category": "smoothies",
       "ingredients": ["Banana", "Pineapple", "Coconut Cream", "Coconut Milk"],
       "nutrition": {
@@ -1523,7 +1804,7 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/tropical-juice.jpg",
+      "image": "/images/tropical-juice..webp",
       "category": "smoothies",
       "ingredients": ["Mango", "Peach Sorbet", "Natural Yogurt", "Orange"],
       "nutrition": {
@@ -1553,7 +1834,7 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/f1.png",
+      "image": "/images/products/f1.webp",
       "category": "acai",
       "ingredients": ["Acai", "Orange", "Banana", "Raspberries", "Honey"],
       "nutrition": {
@@ -1573,7 +1854,12 @@
       "reviews": 167,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Superfood Acai", "Antioxidant Power", "Natural Energy", "Vitamin C"],
+      "benefits": [
+        "Superfood Acai",
+        "Antioxidant Power",
+        "Natural Energy",
+        "Vitamin C"
+      ],
       "allergens": ["None"]
     },
     {
@@ -1583,7 +1869,7 @@
       "price": "$7.20",
       "mediumPrice": "$8.50",
       "largePrice": "$9.50",
-      "image": "/images/products/f2.png",
+      "image": "/images/products/f2.webp",
       "category": "acai",
       "ingredients": ["Acai", "Mango", "Pineapple", "Apple", "Banana"],
       "nutrition": {
@@ -1603,7 +1889,12 @@
       "reviews": 145,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Superfood Acai", "Tropical Blend", "Antioxidants", "Natural Sweetness"],
+      "benefits": [
+        "Superfood Acai",
+        "Tropical Blend",
+        "Antioxidants",
+        "Natural Sweetness"
+      ],
       "allergens": ["None"]
     },
     {
@@ -1611,7 +1902,7 @@
       "name": "Chicken, Lime, Black Pepper & Wild Rocket",
       "description": "A protein-packed wrap with tender chicken breast, zesty lime, aromatic black pepper yogurt dressing, fresh tomatoes, red onion, and peppery wild rocket.",
       "price": "$10.90",
-      "image": "/images/products/w2.png",
+      "image": "/images/products/w2.webp",
       "category": "wraps",
       "ingredients": [
         "Chicken",
@@ -1641,7 +1932,12 @@
       "reviews": 145,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["High Protein", "Fresh Ingredients", "Balanced Nutrition", "Satisfying"],
+      "benefits": [
+        "High Protein",
+        "Fresh Ingredients",
+        "Balanced Nutrition",
+        "Satisfying"
+      ],
       "allergens": ["Gluten", "Dairy"]
     },
     {
@@ -1651,7 +1947,7 @@
       "price": "$7.20",
       "mediumPrice": "$10.90",
       "largePrice": "$12.90",
-      "image": "/images/products/sd2.png",
+      "image": "/images/products/sd2.webp",
       "category": "salads",
       "ingredients": [
         "Kale",
@@ -1682,7 +1978,12 @@
       "reviews": 267,
       "isNew": false,
       "isOrganic": true,
-      "benefits": ["Superfood Rich", "Plant Protein", "Healthy Fats", "Nutrient Dense"],
+      "benefits": [
+        "Superfood Rich",
+        "Plant Protein",
+        "Healthy Fats",
+        "Nutrient Dense"
+      ],
       "allergens": ["Dairy", "Tree Nuts"]
     },
     {
@@ -1690,9 +1991,16 @@
       "name": "Mexican Quinoa Bowl",
       "description": "A vibrant and flavorful bowl with protein-rich quinoa, black beans, corn, avocado, salsa, and a zesty lime dressing.",
       "price": "$11.90",
-      "image": "/images/products/nb1.png",
+      "image": "/images/products/nb1.webp",
       "category": "bowls",
-      "ingredients": ["Quinoa", "Black Beans", "Corn", "Avocado", "Salsa", "Lime Dressing"],
+      "ingredients": [
+        "Quinoa",
+        "Black Beans",
+        "Corn",
+        "Avocado",
+        "Salsa",
+        "Lime Dressing"
+      ],
       "nutrition": {
         "calories": 450,
         "protein": "15g",
