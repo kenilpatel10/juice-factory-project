@@ -1,11 +1,12 @@
-import menuData from "@/data/menu-data.json"
-import type { Product, Category } from "@/lib/db"
+import menuData from "@/data/menu-data.json";
+import type { Product, Category } from "@/lib/db";
 
 // Type-safe access to menu data
 export const categories: Category[] = menuData.categories.map((cat) => ({
   ...cat,
-  count: menuData.products.filter((product) => product.category === cat.id).length,
-}))
+  count: menuData.products.filter((product) => product.category === cat.id)
+    .length,
+}));
 
 export const products: Product[] = menuData.products.map((product) => ({
   ...product,
@@ -13,56 +14,60 @@ export const products: Product[] = menuData.products.map((product) => ({
   servings: product.servings || 1,
   createdAt: new Date().toISOString(),
   updatedAt: new Date().toISOString(),
-}))
+}));
 
 // Helper functions for filtering and searching
 export function getProductsByCategory(categoryId: string): Product[] {
   if (categoryId === "all") {
-    return products
+    return products;
   }
-  return products.filter((product) => product.category === categoryId)
+  return products.filter((product) => product.category === categoryId);
 }
 
 export function searchProducts(query: string): Product[] {
-  const searchTerm = query.toLowerCase()
+  const searchTerm = query.toLowerCase();
   return products.filter(
     (product) =>
       product.name.toLowerCase().includes(searchTerm) ||
       product.description.toLowerCase().includes(searchTerm) ||
-      product.ingredients.some((ingredient) => ingredient.toLowerCase().includes(searchTerm)) ||
-      product.benefits.some((benefit) => benefit.toLowerCase().includes(searchTerm)),
-  )
+      product.ingredients.some((ingredient) =>
+        ingredient.toLowerCase().includes(searchTerm)
+      ) ||
+      product.benefits.some((benefit) =>
+        benefit.toLowerCase().includes(searchTerm)
+      )
+  );
 }
 
 export function getProductById(id: string): Product | undefined {
-  return products.find((product) => product.id === id)
+  return products.find((product) => product.id === id);
 }
 
 export function getFeaturedProducts(): Product[] {
-  return products.filter((product) => product.isNew).slice(0, 6)
+  return products.filter((product) => product.isNew).slice(0, 6);
 }
 
 export function getProductsByIds(ids: string[]): Product[] {
-  return products.filter((product) => ids.includes(product.id))
+  return products.filter((product) => ids.includes(product.id));
 }
 
 // Price utilities
 export function getProductPrice(product: Product, size = "small"): number {
-  let priceStr: string | undefined
+  let priceStr: string | undefined;
 
   if (size === "medium" && product.mediumPrice) {
-    priceStr = product.mediumPrice
+    priceStr = product.mediumPrice;
   } else if (size === "large" && product.largePrice) {
-    priceStr = product.largePrice
+    priceStr = product.largePrice;
   } else {
-    priceStr = product.price
+    priceStr = product.price;
   }
 
-  return Number.parseFloat(priceStr?.replace("$", "") || "0")
+  return Number.parseFloat(priceStr?.replace("$", "") || "0");
 }
 
 export function formatPrice(price: number): string {
-  return `$${price.toFixed(2)}`
+  return `$${price.toFixed(2)}`;
 }
 
 // Category mapping for better organization
@@ -76,7 +81,7 @@ export const categoryMapping = {
   acai: "Acai Frappes",
   wraps: "Healthy Wraps",
   salads: "Gourmet Salads",
-}
+};
 
 // Ingredients data
 export const ingredientsData = [
@@ -84,8 +89,12 @@ export const ingredientsData = [
     id: 1,
     name: "Organic Kale",
     description: "Nutrient-dense superfood packed with vitamins A, C, and K",
-    benefits: ["High in antioxidants", "Supports immune system", "Rich in iron"],
-    image: "/images/ingredients/kale.jpg",
+    benefits: [
+      "High in antioxidants",
+      "Supports immune system",
+      "Rich in iron",
+    ],
+    image: "/images/ingredients/kale.webp",
     category: "Leafy Greens",
   },
   {
@@ -93,7 +102,7 @@ export const ingredientsData = [
     name: "Fresh Ginger",
     description: "Anti-inflammatory root with digestive benefits",
     benefits: ["Reduces inflammation", "Aids digestion", "Boosts immunity"],
-    image: "/images/ingredients/ginger.jpg",
+    image: "/images/ingredients/ginger.webp",
     category: "Roots & Spices",
   },
   {
@@ -101,7 +110,7 @@ export const ingredientsData = [
     name: "Organic Spinach",
     description: "Iron-rich leafy green with folate and vitamins",
     benefits: ["High in iron", "Rich in folate", "Supports eye health"],
-    image: "/images/ingredients/spinach.jpg",
+    image: "/images/ingredients/spinach.webp",
     category: "Leafy Greens",
   },
   {
@@ -109,7 +118,7 @@ export const ingredientsData = [
     name: "Fresh Lemon",
     description: "Vitamin C powerhouse with detoxifying properties",
     benefits: ["High in vitamin C", "Supports detox", "Alkalizing effect"],
-    image: "/images/ingredients/lemon.jpg",
+    image: "/images/ingredients/lemon.webp",
     category: "Citrus",
   },
   {
@@ -117,7 +126,7 @@ export const ingredientsData = [
     name: "Organic Apple",
     description: "Fiber-rich fruit with natural sweetness",
     benefits: ["High in fiber", "Natural energy", "Supports heart health"],
-    image: "/images/ingredients/apple.jpg",
+    image: "/images/ingredients/apple.webp",
     category: "Fruits",
   },
   {
@@ -125,20 +134,20 @@ export const ingredientsData = [
     name: "Fresh Cucumber",
     description: "Hydrating vegetable with cooling properties",
     benefits: ["Hydrating", "Low calorie", "Anti-inflammatory"],
-    image: "/images/ingredients/cucumber.jpg",
+    image: "/images/ingredients/cucumber.webp",
     category: "Vegetables",
   },
-]
+];
 
 // Debug function to check data
 export function debugProducts() {
-  console.log("Total products:", products.length)
+  console.log("Total products:", products.length);
   console.log(
     "Categories:",
-    categories.map((c) => `${c.id}: ${c.count} products`),
-  )
+    categories.map((c) => `${c.id}: ${c.count} products`)
+  );
   console.log(
     "Sample product IDs:",
-    products.slice(0, 5).map((p) => p.id),
-  )
+    products.slice(0, 5).map((p) => p.id)
+  );
 }
