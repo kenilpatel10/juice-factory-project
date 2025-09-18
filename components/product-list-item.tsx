@@ -14,7 +14,7 @@ interface ProductListItemProps {
     price: string
     prepTime?: string
     isNew?: boolean
-    isOrganic?: boolean
+
     benefits?: string[]
     rating?: number
   }
@@ -56,12 +56,7 @@ export default function ProductListItem({ product }: ProductListItemProps) {
                 NEW
               </div>
             )}
-            {product.isOrganic && (
-              <div className="flex items-center bg-green-500/90 backdrop-blur-sm text-white text-xs font-medium px-2 py-1 rounded-full border border-white/20 shadow-lg">
-                <Leaf className="h-3 w-3 mr-1" />
-                ORGANIC
-              </div>
-            )}
+
           </div>
         </div>
 

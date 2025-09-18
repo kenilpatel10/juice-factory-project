@@ -78,7 +78,7 @@ export default function MenuPage() {
             <div className="mt-8 flex flex-wrap items-center justify-center gap-8 text-orange-100">
               <div className="flex items-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
                 <Leaf className="h-6 w-6 mr-2" />
-                <span>100% Organic</span>
+                <span>Freshly Made</span>
               </div>
               <div className="flex items-center animate-fade-in" style={{ animationDelay: "0.4s" }}>
                 <Award className="h-6 w-6 mr-2" />

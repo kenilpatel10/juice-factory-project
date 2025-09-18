@@ -41,14 +41,14 @@ export default function HeroBanner() {
           {/* Badge */}
           <div className="inline-flex items-center bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 mb-6 sm:mb-8 animate-fade-in">
             <Leaf className="h-4 w-4 mr-2 text-green-400" />
-            <span className="text-sm font-medium">100% Organic & Fresh</span>
+            <span className="text-sm font-medium">Freshly Made Daily</span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            Fresh{" "}
+            Freshly{" "}
             <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
-              Organic
+              squeezed
             </span>{" "}
             Juices
             <br />
@@ -57,17 +57,17 @@ export default function HeroBanner() {
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl lg:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed px-4">
-            Experience premium nutrition with our cold-pressed juices, organic smoothies, and healthy meals made from
-            100% organic ingredients.
+            Experience premium nutrition with our cold-pressed juices, fresh smoothies, and healthy meals made from
+            quality ingredients.
           </p>
 
           {/* Feature Pills */}
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-10 px-4">
             {[
-              { icon: Leaf, text: "100% Organic", color: "from-green-400 to-green-600" },
+              { icon: Leaf, text: "Fresh Daily", color: "from-green-400 to-green-600" },
               { icon: Star, text: "Premium Quality", color: "from-purple-400 to-purple-600" },
               { icon: Heart, text: "Made with Love", color: "from-pink-400 to-pink-600" },
-              { icon: Zap, text: "Fresh Daily", color: "from-yellow-400 to-orange-500" },
+              { icon: Zap, text: "Energy Boost", color: "from-yellow-400 to-orange-500" },
             ].map((feature, index) => (
               <div
                 key={index}
@@ -106,12 +106,12 @@ export default function HeroBanner() {
           </div>
 
           {/* Trust Indicators */}
-          <div className="mt-12 sm:mt-16 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 max-w-4xl mx-auto px-4">
+          {/* <div className="mt-12 sm:mt-16 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 max-w-4xl mx-auto px-4">
             {[
               { number: "10,000+", label: "Happy Customers" },
               { number: "4.9/5", label: "Average Rating" },
               { number: "50+", label: "Fresh Options" },
-              { number: "100%", label: "Organic" },
+              { number: "Daily", label: "Fresh Made" },
             ].map((stat, index) => (
               <div
                 key={index}
@@ -124,7 +124,7 @@ export default function HeroBanner() {
                 <div className="text-sm sm:text-base text-gray-300">{stat.label}</div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
 

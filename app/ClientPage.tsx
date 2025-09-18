@@ -31,7 +31,7 @@ export default function ClientPage() {
               Featured <span className="gradient-text">Fresh Picks</span>
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Discover our most popular and newest creations, carefully crafted with the finest organic ingredients
+              Discover our most popular and newest creations, carefully crafted with the finest quality ingredients
             </p>
           </div>
 
@@ -73,8 +73,8 @@ export default function ClientPage() {
             {[
               {
                 icon: Leaf,
-                title: "100% Organic",
-                description: "All our ingredients are certified organic and locally sourced when possible",
+                title: "Freshly Made",
+                description: "All our ingredients are fresh quality and locally sourced when possible",
                 color: "from-green-400 to-green-600",
               },
               {
@@ -119,14 +119,14 @@ export default function ClientPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-purple-600 to-purple-700">
+      {/* <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-purple-600 to-purple-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 text-center text-white">
             {[
               { icon: Users, number: 10000, suffix: "+", label: "Happy Customers" },
               { icon: Star, number: 4.9, suffix: "/5", label: "Average Rating" },
               { icon: Zap, number: 50, suffix: "+", label: "Fresh Options" },
-              { icon: Award, number: 100, suffix: "%", label: "Organic Ingredients" },
+              { icon: Award, number: 100, suffix: "%", label: "Quality Ingredients" },
             ].map((stat, index) => (
               <div key={index} className="animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
                 <stat.icon className="h-10 w-10 sm:h-12 sm:w-12 mx-auto mb-3 sm:mb-4 opacity-90" />
@@ -138,7 +138,7 @@ export default function ClientPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Ingredients Showcase */}
       <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-purple-50 via-white to-purple-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
@@ -148,7 +148,7 @@ export default function ClientPage() {
               Premium <span className="gradient-text">Ingredients</span>
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              We carefully select the finest organic ingredients to create our nutritious and delicious products
+              We carefully select the finest quality ingredients to create our nutritious and delicious products
             </p>
           </div>
           <div className="animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
@@ -171,7 +171,7 @@ export default function ClientPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white dark:bg-gray-800">
+      {/* <section className="py-12 sm:py-16 lg:py-20 bg-white dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">
@@ -185,7 +185,7 @@ export default function ClientPage() {
             <TestimonialCarousel />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-purple-600 to-purple-700">
@@ -194,7 +194,7 @@ export default function ClientPage() {
             Ready to Start Your Healthy Journey?
           </h2>
           <p className="text-lg sm:text-xl text-purple-100 mb-6 sm:mb-8 max-w-2xl mx-auto">
-            Join thousands of satisfied customers who have made the switch to healthier living with our premium organic
+            Join thousands of satisfied customers who have made the switch to healthier living with our premium quality
             juices and meals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md sm:max-w-none mx-auto">

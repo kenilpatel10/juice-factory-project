@@ -36,12 +36,12 @@ export default function GalleryPage() {
       },
       {
         id: "2",
-        title: "Organic Ingredients Showcase",
-        description: "Visual showcase of our premium organic ingredients",
+        title: "Fresh Ingredients Showcase",
+        description: "Visual showcase of our premium fresh ingredients",
         imageUrl: "/placeholder.svg?height=600&width=400",
         category: "ingredients",
         uploadDate: "2024-01-10",
-        tags: ["organic", "ingredients", "quality"],
+        tags: ["fresh", "ingredients", "quality"],
       },
       {
         id: "3",

@@ -34,7 +34,7 @@ export interface Product {
   rating: number
   reviews: number
   isNew: boolean
-  isOrganic: boolean
+
   benefits: string[]
   allergens: string[]
   createdAt?: string
@@ -108,7 +108,7 @@ export const mockProducts: Product[] = [
     rating: 4.9,
     reviews: 234,
     isNew: true,
-    isOrganic: true,
+
     benefits: ["Immune Support", "Anti-inflammatory", "Energy Boost", "Digestive Health"],
     allergens: ["None"],
   },
@@ -140,7 +140,7 @@ export const mockProducts: Product[] = [
     rating: 4.8,
     reviews: 312,
     isNew: false,
-    isOrganic: true,
+
     benefits: ["Tropical Vitamins", "Digestive Enzymes", "Antioxidant Rich", "Natural Energy"],
     allergens: ["None"],
   },

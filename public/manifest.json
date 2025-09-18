@@ -1,7 +1,7 @@
 {
   "name": "Juice Factory - Premium Fresh Juices & Healthy Food",
   "short_name": "Juice Factory",
-  "description": "Experience premium fresh juices, organic salads, and nutritious wraps made from 100% organic ingredients.",
+  "description": "Experience premium fresh juices, healthy salads, and nutritious wraps made from fresh ingredients.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

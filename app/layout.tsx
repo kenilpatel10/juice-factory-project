@@ -25,16 +25,16 @@ export const metadata: Metadata = {
     template: "%s | Juice Factory - Fresh & Healthy",
   },
   description:
-    "Experience premium fresh juices, organic salads, and nutritious wraps delivered in minutes. 100% organic ingredients, exceptional taste, and unmatched quality from Juice Factory. Order now for healthy living!",
+    "Experience premium fresh juices, healthy salads, and nutritious wraps delivered in minutes. quality ingredients, exceptional taste, and unmatched quality from Juice Factory. Order now for healthy living!",
   keywords: [
     "fresh juice delivery",
-    "organic smoothies",
+    "fresh smoothies",
     "healthy food delivery",
     "cold-pressed juice",
     "premium nutrition",
     "wellness drinks",
     "juice factory",
-    "organic ingredients",
+    "quality ingredients",
     "healthy lifestyle",
     "natural juices",
     "fruit smoothies",
@@ -59,13 +59,13 @@ export const metadata: Metadata = {
     siteName: "Juice Factory",
     title: "Juice Factory - Premium Fresh Juices & Healthy Food Delivered",
     description:
-      "Experience premium fresh juices, organic salads, and nutritious wraps delivered in minutes. 100% organic ingredients for your healthy lifestyle.",
+      "Experience premium fresh juices, healthy salads, and nutritious wraps delivered in minutes. quality ingredients for your healthy lifestyle.",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Juice Factory - Fresh Organic Juices and Healthy Food",
+        alt: "Juice Factory - Freshly Squeezed Natural Juices and Healthy Food",
         type: "image/jpeg",
       },
       {
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     creator: "@juicefactory",
     title: "Juice Factory - Premium Fresh Juices & Healthy Food",
     description:
-      "Experience premium fresh juices, organic salads, and nutritious wraps delivered in minutes. 100% organic ingredients for healthy living.",
+      "Experience premium fresh juices, healthy salads, and nutritious wraps delivered in minutes. Fresh ingredients for healthy living.",
     images: ["/images/og-image.jpg"],
   },
   robots: {
@@ -127,7 +127,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Restaurant",
   name: "Juice Factory",
-  description: "Premium fresh juices, organic salads, and nutritious wraps made from 100% organic ingredients.",
+  description: "Premium fresh juices, healthy salads, and nutritious wraps made from quality ingredients.",
   url: "https://juicefactory.com",
   logo: "https://juicefactory.com/juice-factory-logo.jpeg",
   image: "https://juicefactory.com/images/hero-fruits-background.jpeg",
@@ -147,7 +147,7 @@ const jsonLd = {
     longitude: "174.8427",
   },
   openingHours: ["Mo-Su 07:00-22:00"],
-  servesCuisine: ["Healthy Food", "Juices", "Smoothies", "Organic Food"],
+  servesCuisine: ["Healthy Food", "Juices", "Smoothies", "Healthy Food"],
   priceRange: "$$",
   acceptsReservations: false,
   hasDeliveryService: true,

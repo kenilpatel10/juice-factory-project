@@ -135,10 +135,10 @@ export default function ProductPage({ params }: Props) {
                     ✨ NEW
                   </div>
                 )}
-                {product.isOrganic && (
+                {false && (
                   <div className="flex items-center bg-green-500 text-white text-xs sm:text-sm font-medium px-2 sm:px-3 py-1 sm:py-2 rounded-full shadow-lg">
                     <Leaf className="h-3 w-3 sm:h-4 sm:w-4 mr-1" />
-                    100% Organic
+                    Freshly Made
                   </div>
                 )}
                 <div className="flex items-center bg-blue-500 text-white text-xs sm:text-sm font-medium px-2 sm:px-3 py-1 sm:py-2 rounded-full shadow-lg">

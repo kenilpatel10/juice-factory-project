@@ -321,7 +321,7 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 animate-fade-in-up">
           <h2 className="text-4xl font-bold text-white mb-6">Ready to Order?</h2>
           <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
-            Don't wait! Start your healthy journey today with our fresh, organic juices and meals.
+            Don't wait! Start your healthy journey today with our fresh, freshly squeezed juices and meals.
           </p>
           <Link href="/menu" className="btn-secondary bg-white text-orange-600 hover:bg-orange-50 text-lg px-8 py-4">
             View Our Menu

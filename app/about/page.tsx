@@ -6,19 +6,19 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "About Us - Our Story & Mission",
   description:
-    "Learn about Juice Factory's mission to provide healthy, organic food and juices. Meet our team and discover our story of bringing fresh, nutritious meals to your doorstep.",
+    "Learn about Juice Factory's mission to provide healthy, fresh food and juices. Meet our team and discover our story of bringing fresh, nutritious meals to your doorstep.",
   openGraph: {
     title: "About Juice Factory - Our Story & Mission",
     description:
-      "Learn about our mission to provide healthy, organic food and juices. Meet our team and discover our story.",
+      "Learn about our mission to provide healthy, fresh food and juices. Meet our team and discover our story.",
   },
 }
 
 const values = [
   {
     icon: Leaf,
-    title: "Organic & Fresh",
-    description: "We source only the finest organic ingredients, ensuring every product is fresh and nutritious.",
+    title: "Daily Fresh & Natural",
+    description: "We source only the finest quality ingredients, ensuring every product is fresh and nutritious.",
     color: "from-green-400 to-green-600",
   },
   {
@@ -46,7 +46,7 @@ const team = [
     name: "Sarah Martinez",
     role: "Founder & CEO",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Nutritionist with 10+ years of experience in healthy living and organic food.",
+    bio: "Nutritionist with 10+ years of experience in healthy living and fresh food.",
   },
   {
     name: "David Chen",
@@ -66,7 +66,7 @@ const achievements = [
   { icon: Star, number: "4.9/5", label: "Customer Rating" },
   { icon: Users, number: "10,000+", label: "Happy Customers" },
   { icon: Award, number: "50+", label: "Awards Won" },
-  { icon: Leaf, number: "100%", label: "Organic Certified" },
+  { icon: Leaf, number: "Daily", label: "Fresh Made" },
 ]
 
 export default function AboutPage() {
@@ -86,8 +86,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Achievements Section */}
-      <section className="py-16 bg-white dark:bg-gray-800">
+      {/* <section className="py-16 bg-white dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {achievements.map((achievement, index) => (
@@ -101,7 +100,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Story Section */}
       <section className="py-20">
@@ -113,8 +112,8 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6 text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
                 <p>
-                  Juice Factory was born from a simple belief: everyone deserves access to fresh, healthy food that
-                  doesn't compromise on taste. Founded in 2020 by nutritionist Sarah Martinez, we started as a small
+                  Juice Factory was born from a simple belief: everyone deserves access to freshly prepared, healthy food that
+                  doesn't compromise on taste. Founded in 2014, we started as a small
                   juice bar with a big vision.
                 </p>
                 <p>
@@ -123,7 +122,7 @@ export default function AboutPage() {
                   juices, but also nutritious salads and wraps that fuel your body and satisfy your taste buds.
                 </p>
                 <p>
-                  Today, we're proud to be your trusted partner in healthy living, delivering farm-fresh ingredients and
+                  Today, we're proud to be your trusted partner in healthy living, delivering farm-quality ingredients and
                   carefully crafted meals right to your door.
                 </p>
               </div>
@@ -131,7 +130,7 @@ export default function AboutPage() {
             <div className="relative animate-fade-in-right">
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                 <Image
-                  src="/placeholder.svg?height=600&width=600"
+                  src="/images/company.webp?height=600&width=600"
                   alt="Juice Factory story - Fresh ingredients and preparation"
                   width={600}
                   height={600}
@@ -176,8 +175,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
@@ -212,7 +210,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-orange-600 to-pink-600">

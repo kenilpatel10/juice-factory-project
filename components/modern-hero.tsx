@@ -51,12 +51,12 @@ export default function ModernHero() {
           {/* Badge */}
           <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 sm:px-6 py-2 mb-6 sm:mb-8 animate-pulse-glow">
             <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
-            <span className="text-sm sm:text-base font-medium">Fresh • Organic • Healthy</span>
+            <span className="text-sm sm:text-base font-medium">Freshly Squeezed • Natural • Healthy</span>
           </div>
 
           {/* Main Heading */}
           <h1 className="hero-text font-extrabold mb-4 sm:mb-6 text-shadow leading-tight">
-            Fresh Juice
+            Freshly Squeezed Juice
             <br />
             <span className="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
               Factory
@@ -66,7 +66,7 @@ export default function ModernHero() {
           {/* Subtitle */}
           <p className="text-lg sm:text-xl lg:text-2xl text-purple-100 max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed">
             Experience the perfect blend of taste and nutrition with our premium cold-pressed juices, smoothies, and
-            healthy meals made from the finest organic ingredients.
+            healthy meals made from quality ingredients.
           </p>
 
           {/* CTA Buttons */}
@@ -89,15 +89,15 @@ export default function ModernHero() {
           <div className="mt-12 sm:mt-16 grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8 max-w-2xl mx-auto">
             <div className="text-center">
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2">100+</div>
-              <div className="text-purple-200 text-sm sm:text-base">Fresh Recipes</div>
+              <div className="text-purple-200 text-sm sm:text-base">Daily Recipes</div>
             </div>
             <div className="text-center">
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2">50K+</div>
               <div className="text-purple-200 text-sm sm:text-base">Happy Customers</div>
             </div>
             <div className="text-center col-span-2 sm:col-span-1">
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2">100%</div>
-              <div className="text-purple-200 text-sm sm:text-base">Organic</div>
+              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2">Daily</div>
+              <div className="text-purple-200 text-sm sm:text-base">Made Fresh</div>
             </div>
           </div>
         </div>

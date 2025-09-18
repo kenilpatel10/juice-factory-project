@@ -20,7 +20,7 @@ export default function Footer() {
               <span className="text-xl font-bold">Juice Factory</span>
             </Link>
             <p className="text-gray-300 mb-6 text-sm sm:text-base leading-relaxed">
-              Delivering fresh, healthy juices and food made with organic ingredients. Nourish your body with nature's
+              Delivering freshly squeezed juices and healthy food made with quality ingredients. Nourish your body with nature's
               best from Juice Factory.
             </p>
             <div className="flex space-x-4">

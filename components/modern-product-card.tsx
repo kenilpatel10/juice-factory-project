@@ -14,7 +14,7 @@ interface ProductCardProps {
     price: string
     prepTime?: string
     isNew?: boolean
-    isOrganic?: boolean
+
     benefits?: string[]
   }
 }
@@ -62,12 +62,7 @@ export default function ModernProductCard({ product }: ProductCardProps) {
                 NEW
               </div>
             )}
-            {product.isOrganic && (
-              <div className="flex items-center bg-green-500/90 backdrop-blur-sm text-white text-xs font-medium px-3 py-1.5 rounded-full shadow-lg border border-white/20">
-                <Leaf className="h-3 w-3 mr-1" />
-                ORGANIC
-              </div>
-            )}
+
           </div>
 
           {/* Price Badge */}
