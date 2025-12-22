@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect } from "react"
+import { ArrowRight, Leaf, Award, Clock, Heart } from "lucide-react"
 import HeroBanner from "@/components/hero-banner"
 import TestimonialCarousel from "@/components/testimonial-carousel"
 import IngredientsShowcase from "@/components/ingredients-showcase"
@@ -8,7 +9,7 @@ import AnimatedCounter from "@/components/animated-counter"
 import { getFeaturedProducts } from "@/lib/menu-data"
 import ModernProductCard from "@/components/modern-product-card"
 import Link from "next/link"
-import { ArrowRight, Leaf, Award, Users, Clock, Heart, Star, Zap } from "lucide-react"
+
 
 export default function ClientPage() {
   const featuredProducts = getFeaturedProducts()

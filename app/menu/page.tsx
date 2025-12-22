@@ -20,6 +20,31 @@ export default function MenuPage() {
   const [isSearching, setIsSearching] = useState(false)
   const { isLoading } = usePageLoading(1200)
 
+  // Load saved filter state from localStorage on component mount
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const savedCategory = localStorage.getItem('menu-selected-category')
+      const savedSearch = localStorage.getItem('menu-search-query')
+      const savedSort = localStorage.getItem('menu-sort-by')
+      const savedView = localStorage.getItem('menu-view-mode')
+
+      if (savedCategory) setSelectedCategory(savedCategory)
+      if (savedSearch) setSearchQuery(savedSearch)
+      if (savedSort) setSortBy(savedSort)
+      if (savedView) setViewMode(savedView as "grid" | "list")
+    }
+  }, [])
+
+  // Save filter state to localStorage whenever it changes
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('menu-selected-category', selectedCategory)
+      localStorage.setItem('menu-search-query', searchQuery)
+      localStorage.setItem('menu-sort-by', sortBy)
+      localStorage.setItem('menu-view-mode', viewMode)
+    }
+  }, [selectedCategory, searchQuery, sortBy, viewMode])
+
   useEffect(() => {
     setIsSearching(true)
 
@@ -123,12 +148,7 @@ export default function MenuPage() {
                   <Filter className="h-4 w-4 mr-2" />
                   {filteredProducts.length} {filteredProducts.length === 1 ? "product" : "products"}
                 </span>
-                {filteredProducts.length > 0 && (
-                  <div className="flex items-center text-sm text-gray-600 dark:text-gray-400">
-                    <Star className="h-4 w-4 mr-1 text-yellow-500" />
-                    <span>Avg. 4.8/5 rating</span>
-                  </div>
-                )}
+
               </div>
             </div>
             <ViewToggle view={viewMode} onViewChange={setViewMode} />

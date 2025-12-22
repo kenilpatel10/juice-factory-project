@@ -12,9 +12,8 @@ export default function ContactButtons({ productName, productPrice }: ContactBut
   const contactEmail = "prakash.patel310@gmail.com" // Juice Factory contact email
 
   const handleOrderOnline = () => {
-    const message = `Hi! I'd like to order: ${productName} (${productPrice}). Please let me know the availability and delivery details.`
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
-    window.open(whatsappUrl, "_blank")
+    const uberEatsUrl = "https://www.ubereats.com/nz/store/juice-factory/WBVn0h4aT5WQiZmuG2g7Zg?srsltid=AfmBOooaNluPdC8XYUeJjj9IetjkH8jSbLDMcHdOS_mvxw3BmdDUuKdd"
+    window.open(uberEatsUrl, "_blank")
   }
 
   const handleBulkOrder = () => {

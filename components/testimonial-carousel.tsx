@@ -2,14 +2,13 @@
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
-import { Star, ChevronLeft, ChevronRight } from "lucide-react"
+import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const testimonials = [
   {
     id: 1,
     name: "Sarah Johnson",
     role: "Fitness Enthusiast",
-    rating: 5,
     text: "The Green Goddess juice has become my daily ritual. The quality is unmatched and the taste is incredible! I've never felt more energized.",
     image: "/placeholder.svg?height=80&width=80",
     location: "New York, NY",
@@ -18,7 +17,6 @@ const testimonials = [
     id: 2,
     name: "Mike Chen",
     role: "Busy Professional",
-    rating: 5,
     text: "Fast delivery, amazing quality, and the Mediterranean Bowl is absolutely perfect for my lunch breaks. Fresh Juice Co. has changed my eating habits completely.",
     image: "/placeholder.svg?height=80&width=80",
     location: "San Francisco, CA",
@@ -27,7 +25,6 @@ const testimonials = [
     id: 3,
     name: "Emily Davis",
     role: "Health Coach",
-    rating: 5,
     text: "I recommend Fresh Juice Co. to all my clients. The variety and freshness are outstanding! Every ingredient tastes like it was just picked.",
     image: "/placeholder.svg?height=80&width=80",
     location: "Austin, TX",
@@ -36,7 +33,6 @@ const testimonials = [
     id: 4,
     name: "David Rodriguez",
     role: "Marathon Runner",
-    rating: 5,
     text: "As an athlete, nutrition is everything. These juices and meals fuel my training perfectly. The Berry Blast is my pre-workout favorite!",
     image: "/placeholder.svg?height=80&width=80",
     location: "Miami, FL",
@@ -82,17 +78,6 @@ export default function TestimonialCarousel() {
         </div>
 
         <div className="relative z-10">
-          {/* Stars */}
-          <div className="flex justify-center mb-4 sm:mb-6">
-            {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
-              <Star
-                key={i}
-                className="h-5 w-5 sm:h-6 sm:w-6 text-yellow-400 fill-current mx-1 animate-scale-in"
-                style={{ animationDelay: `${i * 0.1}s` }}
-              />
-            ))}
-          </div>
-
           {/* Quote */}
           <blockquote className="text-lg sm:text-2xl text-gray-700 mb-6 sm:mb-8 italic leading-relaxed min-h-[100px] sm:min-h-[120px] flex items-center justify-center px-4">
             <span className="animate-fade-in-up">"{testimonials[currentIndex].text}"</span>
@@ -143,11 +128,10 @@ export default function TestimonialCarousel() {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`transition-all duration-300 touch-manipulation ${
-              index === currentIndex
-                ? "w-8 h-4 sm:w-8 sm:h-3 bg-emerald-500 rounded-full"
-                : "w-4 h-4 sm:w-3 sm:h-3 bg-gray-300 hover:bg-gray-400 rounded-full"
-            }`}
+            className={`transition-all duration-300 touch-manipulation ${index === currentIndex
+              ? "w-8 h-4 sm:w-8 sm:h-3 bg-emerald-500 rounded-full"
+              : "w-4 h-4 sm:w-3 sm:h-3 bg-gray-300 hover:bg-gray-400 rounded-full"
+              }`}
           />
         ))}
       </div>

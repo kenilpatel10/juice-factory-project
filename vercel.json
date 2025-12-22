@@ -3,5 +3,6 @@
     "app/api/products/route.ts": {
       "maxDuration": 10
     }
-  }
+  },
+  "outputFileTracing": true
 }

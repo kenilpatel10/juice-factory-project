@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft, Clock, Users, Heart, Star, Leaf, Shield, Zap, Award } from "lucide-react"
+import { ArrowLeft, Clock, Users, Leaf, Shield, Zap, Award } from "lucide-react"
 import IngredientsShowcase from "@/components/ingredients-showcase"
 import { getProductById } from "@/lib/menu-data"
 import ContactButtons from "@/components/contact-buttons"
@@ -17,7 +17,6 @@ type Props = {
 export default function ProductPage({ params }: Props) {
   const [product, setProduct] = useState<any>(null)
   const [selectedSize, setSelectedSize] = useState("small")
-  const [isLiked, setIsLiked] = useState(false)
   const [activeTab, setActiveTab] = useState("overview")
   const { isLoading } = useProductLoading(2000)
 
@@ -75,7 +74,7 @@ export default function ProductPage({ params }: Props) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       {/* Modern Header with Breadcrumb */}
-      <div className="sticky top-20 z-40 bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl border-b border-purple-100 dark:border-purple-800/30 shadow-sm">
+      <div className="sticky top-0 z-40 bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl border-b border-purple-100 dark:border-purple-800/30 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
@@ -94,25 +93,13 @@ export default function ProductPage({ params }: Props) {
               </div>
             </div>
 
-            {/* Quick Actions */}
-            <div className="flex items-center space-x-3">
-              <button
-                onClick={() => setIsLiked(!isLiked)}
-                className="w-10 h-10 sm:w-12 sm:h-12 bg-white dark:bg-gray-800 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg border border-purple-100 dark:border-purple-800/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500"
-              >
-                <Heart
-                  className={`h-4 w-4 sm:h-5 sm:w-5 transition-colors duration-300 ${
-                    isLiked ? "text-red-500 fill-current" : "text-gray-600 dark:text-gray-300"
-                  }`}
-                />
-              </button>
-            </div>
+
           </div>
         </div>
       </div>
 
       {/* Hero Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 sm:pb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           {/* Product Image Section */}
           <div className="space-y-6 sm:space-y-8 animate-fade-in-left">
@@ -152,11 +139,10 @@ export default function ProductPage({ params }: Props) {
             </div>
 
             {/* Quick Stats Grid */}
-            <div className="grid grid-cols-3 gap-3 sm:gap-6">
+            <div className="grid grid-cols-2 gap-3 sm:gap-6">
               {[
                 { icon: Clock, label: "Prep Time", value: product.prepTime, color: "purple" },
                 { icon: Users, label: "Serves", value: product.servings, color: "blue" },
-                { icon: Star, label: "Rating", value: `${product.rating}/5`, color: "yellow" },
               ].map((stat, index) => (
                 <div
                   key={index}
@@ -215,11 +201,10 @@ export default function ProductPage({ params }: Props) {
                       <button
                         key={option.size}
                         onClick={() => setSelectedSize(option.size)}
-                        className={`p-4 sm:p-6 rounded-xl sm:rounded-2xl border-2 transition-all duration-300 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 ${
-                          selectedSize === option.size
+                        className={`p-4 sm:p-6 rounded-xl sm:rounded-2xl border-2 transition-all duration-300 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 ${selectedSize === option.size
                             ? "border-purple-500 bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/30 text-purple-700 dark:text-purple-300 shadow-lg"
                             : "border-gray-200 dark:border-gray-700 hover:border-purple-300 dark:hover:border-purple-600 bg-white dark:bg-gray-800 hover:bg-purple-50 dark:hover:bg-purple-900/20"
-                        }`}
+                          }`}
                       >
                         <div className="font-semibold text-base sm:text-lg">{option.label}</div>
                         <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">{option.price}</div>
@@ -294,11 +279,10 @@ export default function ProductPage({ params }: Props) {
                   <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
-                    className={`py-4 sm:py-6 px-2 sm:px-4 border-b-3 font-medium text-sm sm:text-base transition-all duration-300 flex items-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 ${
-                      activeTab === tab.id
+                    className={`py-4 sm:py-6 px-2 sm:px-4 border-b-3 font-medium text-sm sm:text-base transition-all duration-300 flex items-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 ${activeTab === tab.id
                         ? "border-purple-500 text-purple-600 dark:text-purple-400 bg-white dark:bg-gray-800 rounded-t-xl sm:rounded-t-2xl shadow-lg"
                         : "border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 hover:border-gray-300 dark:hover:border-gray-600"
-                    }`}
+                      }`}
                   >
                     <tab.icon className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
                     {tab.label}
@@ -322,8 +306,6 @@ export default function ProductPage({ params }: Props) {
                           { label: "Category", value: product.category },
                           { label: "Preparation Time", value: product.prepTime },
                           { label: "Servings", value: product.servings },
-                          { label: "Rating", value: `${product.rating}/5.0` },
-                          { label: "Reviews", value: product.reviews },
                         ].map((item, index) => (
                           <div
                             key={index}

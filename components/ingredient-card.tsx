@@ -34,14 +34,20 @@ export default function IngredientCard({ name, image, benefits, description, ind
         </div>
 
         {/* Image Container */}
-        <div className="relative h-32 overflow-hidden rounded-t-2xl">
-          <Image
-            src={image || "/placeholder.svg"}
-            alt={name}
-            width={200}
-            height={128}
-            className="w-full h-32 object-cover transition-transform duration-700 group-hover:scale-110"
-          />
+        <div className="relative h-32 overflow-hidden rounded-t-2xl bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20">
+          {image ? (
+            <Image
+              src={image}
+              alt={name}
+              width={200}
+              height={128}
+              className="w-full h-32 object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+          ) : (
+            <div className="w-full h-32 flex items-center justify-center">
+              <Sparkles className="h-8 w-8 text-purple-300 dark:text-purple-600 opacity-50" />
+            </div>
+          )}
 
           {/* Image Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

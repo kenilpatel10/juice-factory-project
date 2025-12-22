@@ -31,8 +31,7 @@ export interface Product {
   }
   prepTime: string
   servings: number
-  rating: number
-  reviews: number
+
   isNew: boolean
 
   benefits: string[]
@@ -105,8 +104,7 @@ export const mockProducts: Product[] = [
     },
     prepTime: "5 minutes",
     servings: 1,
-    rating: 4.9,
-    reviews: 234,
+
     isNew: true,
 
     benefits: ["Immune Support", "Anti-inflammatory", "Energy Boost", "Digestive Health"],
@@ -137,8 +135,7 @@ export const mockProducts: Product[] = [
     },
     prepTime: "5 minutes",
     servings: 1,
-    rating: 4.8,
-    reviews: 312,
+
     isNew: false,
 
     benefits: ["Tropical Vitamins", "Digestive Enzymes", "Antioxidant Rich", "Natural Energy"],

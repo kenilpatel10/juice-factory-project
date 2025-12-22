@@ -4,7 +4,7 @@ import type { Product, Category } from "@/lib/db"
 // Type-safe access to menu data
 export const categories: Category[] = menuData.categories.map((cat) => ({
   ...cat,
-  count: menuData.products.filter((product) => product.category === cat.id).length,
+  count: cat.id === "all" ? menuData.products.length : menuData.products.filter((product) => product.category === cat.id).length,
 }))
 
 export const products: Product[] = menuData.products.map((product) => ({

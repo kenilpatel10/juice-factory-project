@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Clock, Leaf, Sparkles, Star } from "lucide-react"
+import { Clock, Leaf, Sparkles } from "lucide-react"
 
 interface ProductListItemProps {
   product: {
@@ -16,7 +16,6 @@ interface ProductListItemProps {
     isNew?: boolean
 
     benefits?: string[]
-    rating?: number
   }
 }
 
