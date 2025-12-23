@@ -1,8 +1,11 @@
 {
-  "functions": {
-    "app/api/products/route.ts": {
-      "maxDuration": 10
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@vercel/next",
+      "config": {
+        "outputFileTracing": true
+      }
     }
-  },
-  "outputFileTracing": true
+  ]
 }
