@@ -1,7 +1,8 @@
 "use client";
 
 import { GripVertical } from "lucide-react";
-import { PanelGroup, Panel, PanelResizeHandle } from "react-resizable-panels";
+import * as RRP from "react-resizable-panels";
+const { PanelGroup, Panel, PanelResizeHandle } = RRP as any;
 
 import { cn } from "@/lib/utils";
 
