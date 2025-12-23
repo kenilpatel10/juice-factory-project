@@ -52,7 +52,7 @@
     "imagemin-webp": "^8.0.0",
     "input-otp": "latest",
     "lucide-react": "^0.454.0",
-    "next": "15.2.4",
+    "next": "15.2.8",
     "next-optimized-images": "^2.6.2",
     "next-themes": "latest",
     "react": "^19",
